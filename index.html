@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="images/logo-tab.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>GPTherapy</title>
+</head>
+<body>
+    <header class="header home-header">
+        <video autoplay loop muted plays-inline class="video">
+            <source src="images/creta.mp4" type="video/mp4">
+        </video>
+            <nav>
+                <div>
+                    <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                </div>
+                    <ul class="bar">
+                        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                        <!-- <li class="hideOnMobile"><a href="about.html">About</a></li> -->
+                        <li class="hideOnMobile"><a href="treatment.html">Treatment</a></li>
+                        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                        <li class="hideOnMobile"><a href="tel:+4917612345678" class="tel-number">What's App</a></li>
+                        <li onclick=display()><a href="#"><img src="images/open.svg" class="menu-button" ></a></li>
+                    </ul>
+                    <ul class="sidebar">
+                        <li  onclick=hide()><a href="#"><img src="images/close.svg"></a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="treatment.html">TREATMENT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+            </nav>
+                        <div class="content">
+                            <h2>George Anastasiou</h2>
+                            <h1>Physiotherapist</h1>
+                            <a href="contact.html">Contact Me</a>
+                        </div>
+    </header>
+    <!--------------- HEADER ------------------>
+    <section id="services">
+        <div class="services-container">
+            <h1>My Services</h1>
+                <div class="span-container">
+                    <div></div>
+                        </div>
+                             </div>
+            <div class="inner-flex">
+                <div class="treatment">
+                    <img src="images/manual.png">
+                        <div>       <!--I NEED THIS EXTRA DIV TO WRAP ALL THE ELEMENTS THAT ARE DIFFERENT LIKE BLOCK AND INLINE-->
+                            <h3>Manual Therapy</h3>
+                                <p>Focus on joint mobilizations and soft tissue manipulation to reduce pain, improve mobility, and promote healing.</p>
+                                    </div>
+                                        </div>
+                <div class="treatment">
+                    <img src="images/massage.png">
+                        <div>
+                            <h3>Therapeutic Massage</h3>
+                                <p>Focus on muscles and soft tissues, promoting relaxation, 
+                                     reducing pain, and improving circulation.</p>
+                                        </div>
+                                            </div>
+                <div class="treatment">
+                    <img src="images/rehab.png">
+                            <div>
+                                <h3>Rehabilitation Exercises</h3>
+                                    <p>Focus on regaining Range of Motion, restore strength, flexibility,
+                                        and function after injury or surgery.</p>
+                                            </div>
+                                                </div>
+            </div>
+    </section>
+        <!-- ------------------SERVICES------------------- -->
+     <section id="tsiou-banner">
+            <div class="tsiou-container">
+                <img src="images/quote.png" class="quote">
+                     <p>“Original and with an innate understanding of my <br> patient’s needs, I 'm here to give a solution to your body.”</p>
+                        <img src="images/tsiou.png" class="tsiou">
+                            
+            </div>
+     </section>
+     <!-- ----------------BANNER---------------- -->
+      <section id="about">
+        <div class="about-container">
+            <div class="about-left">
+                <h4>ABOUT ME</h4>
+                    <h2>Professional Physiotherapist with 4+ years of experience based in Berlin</h2>
+                        <P>Working with mulitple patients by assesing and planning individual programms to promote overall health and better quality of free-pain life.</P>
+                            <button>Find Out More</button>
+                                 </div>
+            <div class="about-right">
+                    <img src="images/physio.jpg" class="physio">
+            </div>
+        </div>
+      </section>
+      <!-- -----------------ABOUT-------------- -->
+      <section id="questions">
+            <div class="questions-container">
+                 <h1>QUESTIONS?</h1>
+                    <p>Whether you're curious about services, need more details,<br> or even have a specific concern, I am here to answer any questions.</p>
+                      <button><a href="contact.html">Let's Talk Now</a></button>
+                        </div>
+ </section>
+    <!-- -----------------QUESTIONS------------------ -->
+</body>
+</html>

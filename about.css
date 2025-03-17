@@ -1,0 +1,166 @@
+
+header{
+    background-image: url(/images/spine.jpg);
+    width: 100%;
+    height: 100%;
+}
+.about-me{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    overflow: hidden;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    padding-bottom: 170px;
+}
+#description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 30px 0;
+}
+.description p {
+    font-family: "Forum", serif;
+    letter-spacing: -1.5px;
+    font-weight: 400;
+    font-size: 36px;
+    max-width: 800px;
+    text-align: center;
+    color: #536941;
+    line-height: 44px;
+}
+/* ----------------ABOUT SECTION---------------- */
+.container {
+    padding: 50px 0 80px 0;
+    display: grid;
+    grid-template-rows: auto auto; /* Image takes first row, text takes second */
+    grid-template-columns: 20fr 1fr; /* Two equal columns for Mission & Values */
+    max-width: 1000px; /* Prevents it from stretching too much */
+    margin: auto; /* Centers it */
+    text-align: center;
+}
+.big-img {
+    grid-column: span 2; /* Image takes full width of both columns */
+    width: 100%;
+    margin: auto;
+}
+.mission-values {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+}
+.mission, .values {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+.mission h2, .values h2 {
+    font-family: 'Oufit', sans-serif;
+    opacity: .9;
+    font-weight: 600;
+    font-size: 21px;
+    color: #536941;
+    padding-bottom: 20px;
+}
+.mission p, .values p {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #536941;
+}
+
+/* ----------------TSIOU-BANNER SECTION------------ */
+#patient-banner{
+    padding: 10px 0px;
+    background-color: #C19F06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.patient-quote{
+    width: 40px;
+    margin: 50px 0 30px 0; 
+}
+.patient-container{
+    text-align: center;
+    font-size: 35px;
+    color: #536941;
+    line-height: 43px;
+    letter-spacing: -2px;
+    font-family: "Forum", serif;
+}
+.patient{
+    width: 80px;
+    margin: 40px 0 0px 0;
+}
+.patient-p{
+    font-size: 14px;
+    color: #536941;
+    line-height: 30px;
+    letter-spacing: -2px;
+    font-family: "DM sans", serif;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------MEDIA QUERIES----------- */
+@media (max-width: 768px) {
+    .about-me{
+        padding-top: 40px;
+        font-size: 25px;
+        font-weight: 600;
+        color: #fff;
+    }
+    .container {
+        grid-template-columns: 1fr; /* Stack everything */
+    }
+    .big-img {
+        grid-column: span 1;
+    }
+    .mission-values {
+        grid-template-columns: 1fr; /* Stack mission & values */
+    }
+    .mission, .values {
+        padding-right: 50px;
+    }
+    .description{
+        padding: 30px 0 0px 0;
+    }
+    .description p {
+        font-size: 22px;
+        max-width: 40%;
+        line-height: 30px;
+    }
+    .about-header {
+        background: url('images/spine.jpg') no-repeat center center;
+        background-size: cover;
+        height: 40vh;
+    }
+    .patient-p{
+        text-align: center;
+    }
+    .patient-testimoni{
+        font-size: 22px;
+    }
+}
+@media (max-width: 1200px) {
+    .description p {
+        max-width: 90%;
+        padding-top: 30px;
+    }
+}

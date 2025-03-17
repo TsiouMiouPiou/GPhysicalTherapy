@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    overflow-x: hidden; /* Prevents horizontal scroll */
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
+    background-size: cover;
+    position: relative;
+    overflow: hidden; 
+}
+.video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the video */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video fills the area */
+    z-index: -1;
+}
+nav {
+    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 200px;
+    cursor: pointer;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+}
+.tel-number{
+    border: 2px solid #fff;
+    padding: 10px 25px;
+    border-radius: 8px;
+}
+.content{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 150px;
+    overflow: hidden;
+}
+.content h1{
+    font-size: 130px;
+    color: #fff;
+    font-weight: 800;
+    transition: .5s ease;
+}
+.content h1:hover{
+    transform: scale(1.1);
+}
+.content h2{
+    font-size: 60px;
+    color: #fff;
+    font-weight: 800;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 25px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: .5s ease;
+}
+.content a:hover{
+    transform: scale(1.1) translateY(-10px);
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px) ;
+    box-shadow: -10px 0 10px rgba(0,0,0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 20px;
+    align-items: flex-start;
+    gap: 50px;
+    
+}
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    color: #fff;
+    width: 100%;
+}
+.menu-button{
+    display: none;
+}
+/* --------------------HEADER--------------------- */
+/* Section styling */
+#services {
+    padding: 80px 20px;
+}
+/* Title container */
+.services-container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 52px;
+    color: #536941;
+    font-family: 'Outfit', sans-serif;    
+    text-align: center;
+}
+/* Underline effect */
+.span-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+.span-container div {
+    background-color: #DCA54A;
+    height: 3px;
+    width: 90px;
+}
+/* ✅ Responsive Grid Layout */
+.inner-flex{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding-top: 40px;
+    width: 65%;   
+    margin: 0 auto;
+}
+/* Individual service box */
+.treatment {
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+.treatment img{
+    max-width:100%;
+}
+.treatment:hover {
+    transform: scale(1.05);
+}
+/* Headings */
+.treatment h3 {
+    font-size: 20px;
+    color: #536941;
+    margin: 20px 0 15px 0 ;
+    font-family: 'Outfit', sans-serif;
+    margin-left: 10px;
+}
+/* Paragraphs */
+.treatment p {
+    font-size: 16px;
+    color: #536941;
+    line-height: 24px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 200;
+    margin-left: 10px;
+}
+/* -------------SERVICES---------- */
+#tsiou-banner{
+    padding: 10px 0px;
+    background-color: #C19F06;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tsiou-container { 
+    text-align: center;
+    padding-right: 80px; 
+}
+.quote{
+    width: 40px;
+    margin: 25px 0; 
+}
+.tsiou-container p {
+    font-size: 35px;
+    color: #536941;
+    line-height: 43px;
+    letter-spacing: -2px;
+    font-family: "Forum", serif;
+}
+.tsiou{
+    width: 300px;
+    margin: 50px 0;
+}
+/* --------------------BANNER------------------ */
+#about {
+    padding: 50px 20px; 
+    display: flex;
+    justify-content: center;
+}
+.about-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    max-width: 1100px; 
+    width: 100%;
+    gap: 200px; 
+    flex-wrap: wrap; 
+}
+.about-left {
+    flex: 1; 
+    max-width: 50%; 
+    padding: 10px 20px;
+}
+.about-left h4 {
+    font-size: 12px;
+    opacity: .7;
+    font-weight: 300;
+    color: #536941;
+    padding-bottom: 22px;
+    font-family: 'DM Sans', sans-serif;
+}
+.about-left h2 {
+    font-weight: 400;
+    font-size: 36px;
+    color: #536941;
+    line-height: 44px;
+    letter-spacing: -1px;
+    font-family: "Forum", serif;
+}
+.about-left p {
+    padding: 25px 0 20px 0;
+    line-height: 26px;
+    font-size: 16px;
+    color: #536941;
+    font-weight: 300;
+    max-width: 100%; /* Allow full width usage */
+    opacity: .7;
+    font-family: 'DM Sans', sans-serif;
+}
+.about-right {
+    flex: 1; /* Take available space */
+    display: flex;
+    justify-content: center; /* Center image */
+    padding: 50px 0;
+}
+.physio{
+    width: 90%; 
+    height: auto;
+    border-radius: 3px;
+}
+.about-left button {
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    color: #0F172A;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'DM Sans', sans-serif;
+}
+.about-left button:hover {
+    transform: scale(1.1);
+}
+/* ------------------ABOUT ME----------------- */
+#questions{
+    padding: 70px 0px 100px 0;
+    background-color: hsl(49, 94%, 69%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.questions-container{ 
+    text-align: center;
+    padding-right: 80px; 
+    line-height: 32px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.questions-container h1{
+    padding-top: 50px;
+    font-size: 3em;
+    font-family: 'Outfit' sans-serif;
+    font-weight: 600;
+    color: #536941;
+}
+.questions-container p{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 19px;
+    color: #4a4a4a;
+    padding: 50px 0;
+    font-weight: 400;
+}
+.questions-container button {
+    background-color: #DCA54A;
+    color: #536941;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 15px;
+    border-radius: 5px;
+    border: 0px solid black;
+    width: 180px;
+    height: 50px;
+    cursor: pointer;
+    transition: .5s;
+    font-family: 'DM Sans', sans-serif;
+}
+.questions-container button a{
+    text-decoration: none;
+}
+.questions-container button a:visited {
+    color: inherit; /* Prevent purple color after the link is clicked */
+}
+.questions-container button:hover{
+    background-color: hsl(37, 68%, 68%);
+    transform: scale(1.1);
+
+}

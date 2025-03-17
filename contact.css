@@ -1,0 +1,182 @@
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+header{
+    background-image: url(/images/contact-landscape.jpg);
+}
+.contact-me{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    overflow: hidden;
+    font-size: 38px;
+    color: #fff;
+    padding-bottom: 170px;
+    letter-spacing: -2px;
+}
+#contact {
+    padding: 100px 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow items to stack when needed */
+    align-items: center; /* Center vertically */
+}
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Center items */
+    width: 100%; /* Adjust width */
+    max-width: 1100px; /* Prevent shrinking too much */
+}
+.inner-personal-info {
+    width: 100%;
+    max-width: 450px; /* Limit max width */
+}
+
+.contact-container h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: #536941;
+    font-family: "Forum", serif;
+    letter-spacing: -2px;
+}
+.contact-container h3 {
+    font-family: 'Outfit', sans-serif;
+    color: #F0E6C5;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.contact-container p {
+    font-family: 'DM Sans', sans-serif;
+    color: #0F172A;
+    font-size: 18px;
+}
+.icons {
+    padding-top: 40px;
+    display: flex;
+    gap: 15px;
+}
+.icons i {
+    font-size: 22px;
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #C0C8B9;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.icons i:hover {
+    background-color: #272E3F;
+}
+/* ---------------FORM--------------*/
+.custom-form {
+    width: 100%;
+    max-width: 500px; /* Adjust width as needed */
+}
+.custom-form h1{
+    padding-bottom: 30px;
+    font-family: "Forum", serif;
+}
+.custom-form input,
+.custom-form textarea {
+    width: 100%;
+    padding: 20px 0 10px 0;
+    margin: 20px 0 0 0 ;
+    opacity: .5;
+    border: none;
+    border-bottom: .5px solid #536941; /* Creates the bottom border */
+    background: transparent; /* Ensures no background */
+    font-size: 16px;
+    color: #0F172A;;
+    outline: none; /* Removes focus outline */
+    transition: border-color 0.3s ease;
+    font-family: 'DM Sans', sans-serif;
+}
+.custom-form input:focus,
+.custom-form textarea:focus {
+    border-bottom: 1px solid #DCA54A; /* Change color on focus */
+    opacity: 1;
+}
+.custom-form button {
+    font-family: 'DM Sans', sans-serif;
+    color: #536941;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #DCA54A;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 30%;
+    letter-spacing: -1px;
+}
+
+.custom-form button:hover {
+    background-color: #b78d3b;
+}
+
+/* Media Query for smaller screen sizes */
+@media (max-width: 768px) {
+    .contact-header {
+        background: url('images/contact-landscape.jpg') no-repeat center center;
+        background-size: cover;
+        height: 40vh;
+    }
+    .contact-me{
+        font-size: 25px;
+    }
+    #contact {
+        flex-direction: column; /* Stacks items vertically */
+        gap: 20px; /* Adjust the gap for better spacing */
+    }
+    .contact-container {
+        width: 100%; /* Make each contact container take up full width */
+        padding-bottom: 100px;
+        display: flex; /* Make sure it's a flex container */
+        flex-direction: column-reverse; /* Stack content vertically */
+        align-items: center; /* Center content horizontally */
+    }
+    .contact-container h1 {        
+        text-align: center;
+        width: 100%;
+        max-width: 1200px; /* Adjust width as needed */
+    }
+    .contact-container h3 {        
+        font-size: 20px;
+    }
+
+    .contact-container p {        
+        font-size: 18px;
+    }
+
+    .icons {
+        display: flex; /* Ensure icons are flexed */
+        justify-content: center; /* Center icons horizontally */
+        gap: 15px; /* Space out icons */
+        padding-top: 40px;
+    }
+
+    .icons i {
+        font-size: 17px;
+    }
+
+    .inner-personal-info{
+        text-align: center;
+        width: 100%; /* Full width */
+        max-width: 1000px; /* Limit max width */
+    }
+
+    .custom-form {
+        width: 100%;
+        max-width: 700px; /* Adjust width as needed */
+    }
+
+    .custom-form button {   
+        margin-top: 15px;
+        font-size: 14px;
+        width: 40%;
+    }
+}

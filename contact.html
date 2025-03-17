@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="icon" href="images/logo-tab.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@100;200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="email.js"></script>
+    <!-- Correct the emailjs CDN script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+       <title>Contact | GPTherapy</title>
+</head>
+<body>
+    <header class="header contact-header">
+            <nav>
+                <div>
+                    <a href="index.html"><img src="images/logo.png" class="logo"></a>
+                </div>
+                    <ul class="bar">
+                        <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                        <!-- <li class="hideOnMobile"><a href="about.html">About</a></li> -->
+                        <li class="hideOnMobile"><a href="treatment.html">Treatment</a></li>
+                        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+                        <li class="hideOnMobile"><a href="tel:+4917612345678" class="tel-number">What's App</a></li>
+                        <li onclick=display()><a href="#"><img src="images/open.svg" class="menu-button" ></a></li>
+                    </ul>
+                    <ul class="sidebar">
+                        <li  onclick=hide()><a href="#"><img src="images/close.svg"></a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <!-- <li><a href="about.html">ABOUT</a></li> -->
+                        <li><a href="treatment.html">TREATMENT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+            </nav>
+            <div class="contact-me">
+            <h1>contact me</h1>
+            </div>
+      
+</header>
+  <section id="contact">
+        <!-- You can find me at -->
+            <div class="contact-container">
+                <div class="inner-personal-info">
+                <h1>You can find me at</h1>
+                <h3>EMAIL</h3>
+                <p>g-anastasiou@hotmail.com</p>
+                <h3>PHONE NUMBER</h3>
+                <p>+4915731384994</p>
+                <h3>LOCATION</h3>
+                <p>Residenzstr. Berlin |DE</p>
+                     <div class="icons">
+                        <a href="https://www.instagram.com/tsiou_9/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/georganastasiou/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://m.me/george.anastasiou.77" target="_blank"><i class="fa-brands fa-facebook-messenger"></i></a>
+                        </div>
+            </div>
+            
+        <!-- Let's get in touch -->
+        <div class="contact-container">
+        <form class="custom-form">
+            <h1>Lets get in touch</h1>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email"  placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>        
+            <button type="button" onclick="sendMail()">Send Message</button>
+        </form>
+        </div>
+  </section>
+</body>
+<script type="text/javascript">
+    (function(){
+        emailjs.init("9kwAogAxBTGkJke20");  // Replace with your own publicKey if needed
+    })();
+</script> 
+</html>
