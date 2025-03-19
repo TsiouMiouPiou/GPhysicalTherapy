@@ -1,5 +1,6 @@
 header{
-    background-image: url(/images/spine.jpg);
+    background-image: url(/GPhysicalTherapy/images/spine.jpg);
+    /* // Delete the GPhysicalTherapy */
 }
 .my-techniques {
     font-family: 'Outfit', sans-serif;

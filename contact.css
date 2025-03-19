@@ -2,7 +2,8 @@ html, body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 header{
-    background-image: url(/images/contact-landscape.jpg);
+    background-image: url(/GPhysicalTherapy/images/contact-landscape.jpg);
+    /* Delete on pc the GPhysicalTherapy */
 }
 .contact-me{
     font-family: 'Outfit', sans-serif;
