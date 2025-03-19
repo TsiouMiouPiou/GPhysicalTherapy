@@ -183,7 +183,7 @@ nav a {
 /* -------------SERVICES---------- */
 #tsiou-banner{
     padding: 10px 0px;
-    background-color: #C19F06;
+    background-color: #C0C8B9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -284,7 +284,7 @@ nav a {
 /* ------------------ABOUT ME----------------- */
 #questions{
     padding: 70px 0px 50px 0;
-    background-color: hsl(49, 94%, 69%);
+    background-color: #b9c6c8;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -300,8 +300,8 @@ nav a {
 .questions-container h1{
     padding-top: 50px;
     font-size: 3em;
-    font-family: 'Outfit' sans-serif;
-    font-weight: 600;
+    font-family: "Forum", serif;
+    font-weight: 700;
     color: #536941;
 }
 .questions-container p{
